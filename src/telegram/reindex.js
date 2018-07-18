@@ -12,7 +12,7 @@ const f = async () => {
         for(let post of posts) {
             const username = post.link.split('/')[3];
 
-            if(!post.username) continue;
+            if(post.username) continue;
 
             post.username = username;
 
