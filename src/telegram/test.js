@@ -1,15 +1,11 @@
-
+const Post = require('../models/Post');
 
 async function f() {
+    const s = 'Black panther';
 
-    await require('./node-storage').login()
+    const found = await Post.search('film', s);
 
-    const m = require('./methods')
-
-    const myChannels = await m.getSubscibedChannels();
-
-    console.log(myChannels);
-
+    console.log(found);
 }
 
 f()

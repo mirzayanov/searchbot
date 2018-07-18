@@ -7,7 +7,7 @@ const bot = async ({author=null, title, translated=null, type, keywords=[], chan
 
     regexp = `[^a-zA-Zа-яА-ЯёЁ]${regexp}[^a-zA-Zа-яА-ЯёЁ]`
 
-    add([...keywords, ...channels_keywords])
+    (channels_keywords.length > 0) && (add([...channels_keywords]))
 
     const links = await search(regexp, author, type)
 
