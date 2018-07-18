@@ -15,17 +15,17 @@ const f = async () => {
         const queue = require('../lib/queue');
 
         for(let part of splitted) {
-            await queue((post) => {
+            await queue(post => {
                 return new Promise(resolve => {
                     const username = post.link.split('/')[3];
 
-                    if(post.username) return false;
+                    if(post.username) resolve([])
 
                     post.username = username;
                     post.markModified('username');
 
                     post.save(() => {
-                        resolve(true);
+                        resolve([]);
                     });
                 })
             }, part)
