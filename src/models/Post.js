@@ -7,14 +7,16 @@ const schema = mongoose.Schema({
         required: true
     },
     text: String,
-    type: String
+    type: String,
+    username: String
 });
 
-schema.statics.add = async (link, text, type) => {
+schema.statics.add = async (link, text, type, username) => {
     const post = new Post({
         link: link,
         text: text,
-        type: type
+        type: type,
+        username: username
     })
 
     return new Promise((resolve, reject) => {
@@ -36,6 +38,30 @@ schema.statics.search = async (type, regexp) => {
             if(err) reject(err)
 
             resolve(posts)
+        })
+
+    })
+}
+
+schema.statics.getUsernames = async () => {
+    return new Promise((resolve, reject) => {
+
+        Post.distinct('username', (err, usernames) => {
+            if(err) reject(err)
+
+            resolve(usernames)
+        })
+
+    })
+};
+
+schema.statics.deleteChannelPosts = async (username) => {
+    return new Promise((resolve, reject) => {
+
+        Post.remove({username}, (err, row) => {
+            if(err) reject(err)
+
+            resolve(row)
         })
 
     })
