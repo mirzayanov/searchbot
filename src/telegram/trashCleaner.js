@@ -5,7 +5,7 @@ const { findChannels, timeout} = require('./methods')
 
 module.exports = async () => {
 
-    schedule.scheduleJob('* 18 * *', async () => {
+    schedule.scheduleJob('* 19 * * *', async () => {
         const usernames = await Post.getUsernames();
 
         if(usernames.length === 0) return;
@@ -24,6 +24,8 @@ module.exports = async () => {
             await Post.deleteChannelPosts(username);
             console.log(`trash-cleaner: deleted ${username} channel posts`)
         }
+
+        console.log('trash-cleaner: finished work');
 
     })
 
