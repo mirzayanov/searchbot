@@ -6,6 +6,8 @@
       <change beforePath="$PROJECT_DIR$/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/mongoose.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/mongoose.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/telegram/methods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/telegram/methods.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/telegram/reindex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/telegram/reindex.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,17 +33,17 @@
       <file leaf-file-name="methods.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/telegram/methods.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="307" column="48" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="48" />
+            <state relative-caret-position="22">
+              <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Post.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Post.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/models/Post.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="293">
+              <caret line="48" column="21" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -58,8 +60,17 @@
       <file leaf-file-name="reindex.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/telegram/reindex.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="330">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="trashCleaner.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/telegram/trashCleaner.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -67,8 +78,8 @@
       <file leaf-file-name="updates-spy.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/telegram/updates-spy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="198">
+              <caret line="9" column="37" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -77,11 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>add</find>
-      <find>addTo</find>
-      <find>leaveA</find>
-      <find>defineT</find>
-      <find>getMessages</find>
       <find>getMess</find>
       <find>getAl</find>
       <find>getHisto</find>
@@ -106,7 +112,12 @@
       <find>фильм</find>
       <find>data-ft</find>
       <find>getSub</find>
+      <find>channel.username</find>
+      <find>getUnre</find>
+      <find>getMessages</find>
       <find>find</find>
+      <find>time</find>
+      <find>findCh</find>
     </findStrings>
     <replaceStrings>
       <replace>Post</replace>
@@ -141,14 +152,15 @@
         <option value="$PROJECT_DIR$/src/fb/methods.js" />
         <option value="$PROJECT_DIR$/src/lib/piracyRegexp.js" />
         <option value="$PROJECT_DIR$/src/twitter/methods.js" />
-        <option value="$PROJECT_DIR$/src/telegram/methods.js" />
         <option value="$PROJECT_DIR$/src/fb/reg.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/lib/mongoose.js" />
         <option value="$PROJECT_DIR$/config/config.json" />
         <option value="$PROJECT_DIR$/src/telegram/test.js" />
-        <option value="$PROJECT_DIR$/src/telegram/reindex.js" />
         <option value="$PROJECT_DIR$/src/models/Post.js" />
+        <option value="$PROJECT_DIR$/src/telegram/reindex.js" />
+        <option value="$PROJECT_DIR$/src/telegram/methods.js" />
+        <option value="$PROJECT_DIR$/src/telegram/trashCleaner.js" />
       </list>
     </option>
   </component>
@@ -341,12 +353,12 @@
       <workItem from="1529575301533" duration="3646000" />
       <workItem from="1530863082919" duration="1215000" />
       <workItem from="1530951760612" duration="692000" />
-      <workItem from="1531896484938" duration="10847000" />
+      <workItem from="1531896484938" duration="12598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243037000" />
+    <option name="totallyTimeSpent" value="244788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -360,7 +372,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.47226387" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.34097034" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.21024258" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -393,13 +405,6 @@
     <select />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/telegram/methods.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fb/test.js" />
     <entry file="file://$PROJECT_DIR$/config/config.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -642,24 +647,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/telegram/methods.js">
+    <entry file="file://$PROJECT_DIR$/src/lib/mongoose.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="307" column="48" selection-start-line="307" selection-start-column="38" selection-end-line="307" selection-end-column="48" />
+        <state relative-caret-position="66">
+          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/telegram/updates-spy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/lib/mongoose.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="38" lean-forward="true" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
+        <state relative-caret-position="198">
+          <caret line="9" column="37" selection-end-line="18" />
         </state>
       </provider>
     </entry>
@@ -672,15 +670,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/telegram/reindex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="330">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/telegram/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="181" column="12" selection-start-line="181" selection-start-column="12" selection-end-line="181" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/models/Post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+        <state relative-caret-position="293">
+          <caret line="48" column="21" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/telegram/trashCleaner.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="24" column="58" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
         </state>
       </provider>
     </entry>

@@ -4,19 +4,33 @@ const Post = require('../models/Post');
 const f = async () => {
     console.log('начали индексирование');
 
-    Post.find({}, (err, posts) => {
+    Post.find({}, async (err, posts) => {
         if(err) return console.error(err);
 
         console.log('получили ссылки:', posts.length);
 
-        for(let post of posts) {
-            const username = post.link.split('/')[3];
+        const splitted = require('../lib/splitOnParts')(posts, 10000);
+        console.log('разбили по 10к:', splitted.length);
 
-            if(post.username) continue;
+        const queue = require('../lib/queue');
 
-            post.username = username;
+        for(let part of splitted) {
+            await queue((post) => {
+                return new Promise(resolve => {
+                    const username = post.link.split('/')[3];
 
-            post.save();
+                    if(post.username) return false;
+
+                    post.username = username;
+                    post.markModified('username');
+
+                    post.save(() => {
+                        resolve(true);
+                    });
+                })
+            }, part)
+
+            console.log('закончили часть:');
         }
 
         console.log('закончили индексирование');

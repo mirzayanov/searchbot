@@ -192,6 +192,7 @@ const getMessages = async (channel, limit, offset_id=0, onlyHistory) => {
 
         const messages = history.messages.map((msg) => {
             msg.link = `https://t.me/${channel.username}/${msg.id}`
+            msg.username = channel.username
             return msg
         })
 
@@ -203,6 +204,7 @@ const getMessages = async (channel, limit, offset_id=0, onlyHistory) => {
 const getHistoryMessages = (history, channel) => {
     const messages = history.messages.map((msg) => {
         msg.link = `https://t.me/${channel.username}/${msg.id}`
+        msg.username = channel.username
         return msg
     })
 
