@@ -1,0 +1,149 @@
+{
+
+  "mongoose": {
+    "uri": "mongodb://localhost/telegram"
+  },
+
+  "telegram": {
+    "phone": "+79872742502"
+  },
+
+  "fb": {
+    "cookie": "datr=HsrHWmRFFmXxg5wvPu64Guw0; ; sb=gNTcWhvNKzav8E00gvDl_qx4; c_user=100025745465462; xs=50%3A48HuL-mQfD0trw%3A2%3A1524868059%3A-1%3A-1; pl=n; fr=0QV6jff769XJFVGzn.AWXlUSFlxualLYyFB17WWherLYE.BaxQKj.0t.Frr.0.0.Ba8Mq_.AWXVkq7Q; act=1525731096894%2F4; presence=EDvF3EtimeF1525732843EuserFA21B25745465462A2EstateFDutF1525732843299CEchFDp_5f1B25745465462F1CC; wd=744x668"
+  },
+
+  "keywords": {
+    "music": [
+      "музыка",
+      "музон",
+      "music",
+      "music albums",
+      "telegram music",
+      "e:\\music",
+      "vk music",
+      "free music",
+      "320 kbps",
+      "imusic",
+      "sound",
+      "tracks"
+    ],
+    "common": [
+      "Torrent Files"
+    ],
+    "book": [
+      "book",
+      "книжное",
+      "книжные",
+      "книжная",
+      "книжный",
+      "книго",
+      "буквоед",
+      "library",
+      "booksmania",
+      "english books",
+      "ebook",
+      "ebooks",
+      "ebookz",
+      "epub",
+      "mobi"
+    ],
+
+    "film": [
+      "mp4",
+      "hd films",
+      "kino4k",
+      "cinema",
+      "кино hd",
+      "фильмы hd",
+      "киноград",
+      "Download Movies",
+      "RickyChannel",
+      "TLGCHANNELMOVIE",
+      "Fullmovie",
+      "DownloadNewMovie"
+    ],
+    "software": [],
+    "game": [],
+    "piracy": [
+      "download",
+      "скачать",
+      "free",
+      "Torrent",
+      "смотреть онлайн",
+      "смотреть здесь",
+      "смотреть hd",
+      "смотреть фильм",
+      "серия","сезон",
+      "watch", "все серии",
+      "fb2", "pdf", "epub",
+      "mp3", "mp4", "avi",
+      "читать в", "read ",
+      "смотреть"
+    ]
+  },
+
+  "typeKeys": {
+    "book": [
+      "book",
+      "library",
+      "ebook",
+      "epub",
+      "mobi",
+      "fb2",
+      "pdf",
+      "книга",
+      "book",
+      "descargar",
+      "magazine",
+      "journal"
+    ],
+    "film": [
+      "mp4",
+      "avi",
+      "mov",
+      "720p","1080p", "480p",
+      "kino",
+      "cinema",
+      "Download Movie",
+      "watch online",
+      "смотреть онлайн",
+      "смотреть",
+      "сезон", "серия",
+      "смотри здесь",
+      "full hd",
+      "фильм",
+      "film",
+      "serial", "seryal",
+      "сериал"
+
+    ],
+    "music": [
+      "музыка",
+      "listen",
+      "слушать",
+      "mp3",
+      "music",
+      "320 kbps",
+      "sound",
+      "track"
+    ]
+  },
+
+  "queryKeys": {
+    "film": {
+      "ru":["фильм", "фильм смотреть", "фильм скачать", "смотреть онлайн",
+        "смотреть", "фильм торрент"],
+      "en": ["watch", "film", "download film", "watch online"]
+    },
+    "serial": {
+      "ru": ["смотреть онлайн", "смотреть", "сериал", "смотреть сериал"],
+      "en": ["watch", "watch serial", "download serial", "watch online"]
+    },
+    "other": ["download",
+      "скачать",
+      "free",
+      "Torrent",
+      "fb2", "pdf", "epub",
+      "mp3", "mp4", "avi"]
+  }
+}

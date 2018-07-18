@@ -1,0 +1,28 @@
+{
+  "name": "crm-telegram-search",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.2",
+    "fb": "^2.0.0",
+    "mongoose": "^5.0.17",
+    "mtproto-storage-fs": "^0.3.1",
+    "nconf": "^0.10.0",
+    "node-schedule": "^1.3.0",
+    "prompt": "^1.0.0",
+    "puppeteer": "^1.1.1",
+    "request": "^2.85.0",
+    "request-promise-native": "^1.0.5",
+    "telegram-mtproto": "^3.0.6",
+    "twitter": "^1.7.1"
+  },
+  "scripts": {
+    "start": "node ./src/app",
+    "daemon": "forever start -a -l log.txt -o out.txt -e err.txt -c \"npm start\" ./",
+    "initDB": "forever start -a -o outInitDB.txt -e errInitDB.txt -c \"node src/telegram/initDB\" ./"
+  },
+  "author": "rrrainy",
+  "license": "ISC"
+}
