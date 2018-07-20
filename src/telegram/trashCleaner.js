@@ -12,13 +12,13 @@ module.exports = async () => {
 
         console.log(`trash-cleaner: got ${usernames.length} usernames`)
 
-        for(let username of usernames) {
+        cycleUsernames: for(let username of usernames) {
             await timeout(10);
             const channels = await findChannels(username);
             if(!channels || channels.length === 0) continue;
 
             for(let channel of channels) {
-                if(channel.username === username) continue;
+                if(channel.username === username) continue cycleUsernames;
             }
 
             await Post.deleteChannelPosts(username);
