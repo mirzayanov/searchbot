@@ -13,7 +13,7 @@ module.exports = async () => {
         console.log(`trash-cleaner: got ${usernames.length} usernames`)
 
         for(let username of usernames) {
-            timeout(10);
+            await timeout(10);
             const channels = await findChannels(username);
             if(!channels || channels.length === 0) continue;
 
