@@ -5,7 +5,7 @@ const { findChannels, timeout} = require('./methods')
 
 module.exports = async () => {
 
-    schedule.scheduleJob('* */10 * * *', async () => {
+    schedule.scheduleJob('* * 20 * *', async () => {
         const usernames = await Post.getUsernames();
 
         if(usernames.length === 0) return;
